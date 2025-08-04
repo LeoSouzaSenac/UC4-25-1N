@@ -28,7 +28,6 @@ Bruno
 Carlos
 Diana
 Eduardo
-```
 
 ---
 
