@@ -135,16 +135,15 @@ do {
 * Use `do...while` quando o bloco deve rodar pelo menos uma vez.
 * Evite `for...in` em arrays, pois os índices retornados são strings.
 
-
-
-
 ---
+
 # Exercícios
 
 ## 1. **`for` tradicional** – Tema: Senhor dos Anéis
 
 **Exercício:**
-Você tem uma lista dos membros da Sociedade do Anel. Use um `for` para imprimir **somente os hobbits** (se você não sabe quais são hobbits ou nem o que é um hobbit, pesquisa né).
+
+Você tem uma lista dos membros da Sociedade do Anel. Use um `for` para imprimir **somente os hobbits**.
 
 ```ts
 const sociedade = ['Frodo', 'Sam', 'Gandalf', 'Legolas', 'Gimli', 'Merry', 'Pippin', 'Aragorn', 'Boromir'];
@@ -160,6 +159,7 @@ const sociedade = ['Frodo', 'Sam', 'Gandalf', 'Legolas', 'Gimli', 'Merry', 'Pipp
 ## 2. **`for...of`** – Tema: Star Wars
 
 **Exercício:**
+
 Você tem uma lista de personagens de Star Wars. Use `for...of` para imprimir **todos os personagens que são jedis**.
 
 ```ts
@@ -173,13 +173,14 @@ const personagens = [
 
 **Desafio:**
 
-* Itere sobre os personagens e mostre: `"Jedi encontrado: <nome>"`
+* Imprima: `"Jedi encontrado: <nome>"`
 
 ---
 
 ## 3. **`for...in`** – Tema: Naruto
 
 **Exercício:**
+
 Você tem um objeto com personagens de Naruto e seus clãs. Use `for...in` para imprimir todos os clãs e seus membros.
 
 ```ts
@@ -193,13 +194,14 @@ const personagens = {
 
 **Desafio:**
 
-* Imprima no formato: `"<Personagem> pertence ao clã <clã>"`
+* Imprima: `"<Personagem> pertence ao clã <clã>"`
 
 ---
 
 ## 4. **`forEach`** – Tema: Dragon Ball
 
 **Exercício:**
+
 Você tem uma lista de personagens de Dragon Ball e seus níveis de poder. Use `forEach` para imprimir **somente aqueles com nível de poder maior que 8000**.
 
 ```ts
@@ -220,6 +222,7 @@ const personagens = [
 ## 5. **`while`** – Tema: Pokémon
 
 **Exercício:**
+
 Você tem uma lista de Pokémon. Use `while` para capturar Pokémon até encontrar um **Pokémon lendário**.
 
 ```ts
@@ -228,7 +231,6 @@ const pokemons = ['Pikachu', 'Charmander', 'Bulbasaur', 'Mewtwo', 'Squirtle'];
 
 **Desafio:**
 
-* Use um contador para percorrer a lista.
 * Imprima: `"Capturando <nome>"`
 * Quando encontrar `"Mewtwo"`, imprima `"Pokémon lendário encontrado: Mewtwo!"` e pare o loop.
 
@@ -237,6 +239,7 @@ const pokemons = ['Pikachu', 'Charmander', 'Bulbasaur', 'Mewtwo', 'Squirtle'];
 ## 6. **`do...while`** – Tema: Senhor dos Anéis
 
 **Exercício:**
+
 Você está jogando um jogo de aventura e precisa **andar pela Terra Média até chegar em Mordor**. Use `do...while` para simular os passos.
 
 ```ts
@@ -248,9 +251,97 @@ const passosParaMordor = 5;
 
 * A cada passo, imprima: `"Dando passo <passos>"`
 * Quando chegar em Mordor, imprima: `"Chegamos em Mordor!"`
-* Use `do...while` para garantir que pelo menos um passo seja dado.
 
 ---
 
+# 📥 Respostas
+
+<details>
+<summary>Clique aqui para mostrar as respostas dos exercícios</summary>
+
+```ts
+// 1 - Sociedade do Anel - Hobbits
+const sociedade = ['Frodo', 'Sam', 'Gandalf', 'Legolas', 'Gimli', 'Merry', 'Pippin', 'Aragorn', 'Boromir'];
+
+for (let i = 0; i < sociedade.length; i++) {
+    if (sociedade[i] === 'Frodo'
+        || sociedade[i] === 'Sam'
+        || sociedade[i] === 'Merry'
+        || sociedade[i] === 'Pippin') {
+        console.log(`Hobbit encontrado: ${sociedade[i]}`);
+    }
+}
+
+// 2 - Star Wars - Jedis
+const personagensSW = [
+    { nome: 'Luke Skywalker', jedi: true },
+    { nome: 'Leia Organa', jedi: false },
+    { nome: 'Yoda', jedi: true },
+    { nome: 'Darth Vader', jedi: false },
+];
+
+for (let personagem of personagensSW) {
+    if (personagem.jedi) {
+        console.log(`Jedi encontrado: ${personagem.nome}`);
+    }
+}
+
+// 3 - Naruto - Clãs
+const personagensNaruto = {
+    Naruto: 'Uzumaki',
+    Sasuke: 'Uchiha',
+    Sakura: 'Haruno',
+    Kakashi: 'Hatake'
+};
+
+for (let personagem in personagensNaruto) {
+    console.log(`${personagem} pertence ao clã ${personagensNaruto[personagem as keyof
+```
+
+
+typeof personagensNaruto]}\`);
+}
+
+// 4 - Dragon Ball - Poder
+const personagensDBZ = \[
+{ nome: 'Goku', poder: 15000 },
+{ nome: 'Vegeta', poder: 14999 },
+{ nome: 'Krillin', poder: 7500 },
+{ nome: 'Freeza', poder: 20000 },
+];
+
+personagensDBZ.forEach((personagem) => {
+if (personagem.poder > 8000) {
+console.log(`O poder de ${personagem.nome} é de mais de 8000!`);
+}
+});
+
+// 5 - Pokémon - While
+const pokemons = \['Pikachu', 'Charmander', 'Bulbasaur', 'Mewtwo', 'Squirtle'];
+let contador = 0;
+
+while (contador < pokemons.length) {
+if (pokemons\[contador] === 'Mewtwo') {
+console.log('Pokémon lendário encontrado: Mewtwo!');
+break;
+}
+console.log(`Capturando ${pokemons[contador]}`);
+contador++;
+}
+
+// 6 - Terra Média - do...while
+let passos = 0;
+const passosParaMordor = 5;
+
+do {
+console.log(`Dando passo ${passos}`);
+passos++;
+} while (passos < passosParaMordor);
+
+console.log('Chegamos em Mordor!');
+
+```
+
+</details>
 
 
