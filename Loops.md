@@ -295,11 +295,7 @@ const personagensNaruto = {
 };
 
 for (let personagem in personagensNaruto) {
-    console.log(`${personagem} pertence ao clã ${personagensNaruto[personagem as keyof
-```
-
-
-typeof personagensNaruto]}\`);
+    console.log(`${personagem} pertence ao clã ${personagensNaruto[personagem as keyof typeof personagensNaruto]}\`);
 }
 
 // 4 - Dragon Ball - Poder
@@ -343,5 +339,4 @@ console.log('Chegamos em Mordor!');
 ```
 
 </details>
-```
 
