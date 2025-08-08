@@ -202,6 +202,7 @@ const animal = 'gato';
 // 3 - Sair
 
 // Importe readline-sync e use switch para mostrar uma mensagem para cada opção.
+// Desafio: encontre um modo de fazer com que, toda vez que eu digitar uma opção, o menu apareça novamente, ou seja, o código só deve parar quando eu clicar em 'sair'. Dica: que estrutura de código usamos para repetir alguma coisa?
 ```
 
 ---
@@ -215,7 +216,3 @@ const animal = 'gato';
 * O `readline-sync` é ótimo para criar experiências interativas no terminal!
 
 ---
-
-
-Se quiser, posso exportar isso como um arquivo `.md` direto para você baixar. Deseja isso?
-```
