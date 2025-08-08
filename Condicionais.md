@@ -113,6 +113,7 @@ Você pode criar menus interativos no terminal usando a biblioteca `readline-syn
 
 ```bash
 npm install readline-sync
+npm install @types/readline-sync
 ```
 
 ### Exemplo de menu:
