@@ -150,12 +150,13 @@ conta.setSaldo(-200); // Erro: saldo não pode ser negativo
 
 ## Exercício: Sistema de Personagens de RPG
 
-Crie uma classe `Personagem` que tenha atributos como `nome`, `classe` (guerreiro, mago, arqueiro, etc), `vida` e `força`.
+Crie uma classe `Personagem` que tenha atributos como `nome`, `classe` (guerreiro, mago, arqueiro, etc), `vida` e `força`, e uma classe `Monstro` que tem `nome`, `vida`, `força`.
 Implemente métodos para:
 
-* `atacar(outroPersonagem: Personagem)`: diminui a vida do personagem atacado de acordo com a força do atacante.
+* `atacar`: diminui a vida do personagem atacado de acordo com a força do atacante.
+* `dano`: método que é chamado quando precisamos diminuir a vida do personagem (quando ele é atacado por exemplo)
 * `curar(valor: number)`: aumenta a vida do personagem, mas nunca ultrapassa um máximo (defina um limite).
 
-Depois, crie pelo menos 3 personagens diferentes e simule uma pequena batalha entre eles, exibindo o status dos personagens após cada ataque.
+Depois, crie um objeto da classe Personagem e outro da classe Monstro e simule uma pequena batalha entre eles, exibindo o status dos personagens após cada ataque.
 
 
