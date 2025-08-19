@@ -116,7 +116,7 @@ heroi.treinar();       // Acessando protected na própria instância
 
 2. Crie uma classe `ContaBancaria` com um saldo `protected`. Dentro desta classe, crie também um método `atualizarSaldo` que deve ser protected (sim, podemos encapsular métodos também).
    Este método deve receber um valor como parâmetro e acrescenta este valor ao atributo `saldo`.
-   Crie depois uma subclasse `ContaPoupanca` e, nela, crie um método público chamado `aplicarJuros`.
+   Crie depois uma subclasse `ContaPoupanca` e, nela, crie um método público chamado `aplicarJuros`. Este método deve chamar o método atualizarSaldo e acrescentar os juros.
    Em index, instancie ContaPoupanca e tente acessar os dois métodos para ver o que acontece.
    Tente acessar o saldo diretamente fora das classes e veja o que acontece.
 
