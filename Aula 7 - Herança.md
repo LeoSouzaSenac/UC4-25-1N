@@ -125,25 +125,19 @@ cobra.botarOvo();      // método da classe Reptil
 
 ### 📝 Exercício 1: Criando novas subclasses
 
-* Crie uma subclasse `Ave` que herda de `Animal`.
-* Adicione um método `voar()`.
-* Teste no `index.ts` criando um objeto `papagaio`.
+* Crie uma subclasse `Crocodile` que herda de `Animal`.
+* Adicione um método `swim()` (nadar).
+* Teste no `index.ts` criando um objeto `crocodilo` e chame seus métodos.
 
 ---
 
-### 📝 Exercício 2: Expansão dos Mamíferos
 
-* Na classe `Mamifero`, adicione um método `emitirSom()`.
-* Crie um objeto `gato` que emite `"Miau"`.
-* Crie um objeto `cachorro` que emite `"Au au"`.
 
----
+### 📝 Exercício 2: Generalização
 
-### 📝 Exercício 3: Generalização
-
-* Crie um array `animais: Animal[]`.
-* Adicione dentro dele instâncias de `Mamifero`, `Reptil` e `Ave`.
-* Percorra o array e chame o método `mover()` de cada objeto.
+* Crie um array que deve aceitar todos os animais (Dog, Owl e Crocodile). Pergunte-se: de que tipo esse array deve ser?
+* Adicione dentro dele instâncias de `Dog`, `Owl` e `Crocodile`.
+* Percorra o array e chame o método `eat()` de cada objeto.
 * Observe que **todos têm o mesmo método**, mas pertencem a classes diferentes.
 
 ---
@@ -154,7 +148,3 @@ cobra.botarOvo();      // método da classe Reptil
 * Em TypeScript usamos `extends` para indicar que uma classe herda de outra.
 * Subclasses herdam atributos/métodos da superclasse, mas também podem ter **novos comportamentos**.
 
----
-
-Quer que eu também prepare uma **versão com gabarito dos exercícios** (as classes `Ave`, `Gato`, `Cachorro` já implementadas), ou você prefere deixar apenas a lista para seus alunos resolverem?
-```
