@@ -67,28 +67,43 @@ export class Personagem {
         this.vida = vida;
     }
 
+    // Método protected: só pode ser chamado dentro da classe ou subclasses
     protected sofrerDano(valor: number) {
         this.vida -= valor;
-        console.log(`Vida atual: ${this.vida}`);
+        console.log(`${this.constructor.name} sofreu ${valor} de dano. Vida atual: ${this.vida}`);
+    }
+
+    // Método público para permitir que outras instâncias recebam dano sem expor o protected
+    public receberDano(valor: number) {
+        this.sofrerDano(valor);
     }
 }
 
+import { Personagem } from "./Personagem";
+
 export class Guerreiro extends Personagem {
-    constructor(vida: number){
-      supor(vida)
+    constructor(vida: number) {
+        super(vida);
     }
+
+    // Método público que chama o protected de outra instância via método público
     atacar(inimigo: Personagem) {
-        console.log("Atacando inimigo...");
-        
-        inimigo.sofrerDano(10); // Permite chamar método protected
+        console.log(`${this.constructor.name} atacando ${inimigo.constructor.name}...`);
+        inimigo.receberDano(10); // usa o método público, que chama o protected internamente
+    }
+
+    // Método que acessa diretamente o protected da própria instância
+    treinar() {
+        console.log(`${this.constructor.name} treinando...`);
+        this.sofrerDano(5); // ✅ permitido: acessando protected da própria instância
     }
 }
 
 const heroi = new Guerreiro(100);
 const vilao = new Guerreiro(80);
 
-heroi.atacar(vilao);
-// vilao.sofrerDano(5); // ❌ ERRO: método protected não acessível fora da classe ou subclasses
+heroi.atacar(vilao);  // Atacando outro personagem (usa método público que chama protected)
+heroi.treinar();       // Acessando protected na própria instância
 ```
 
 ---
