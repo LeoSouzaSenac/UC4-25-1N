@@ -9,13 +9,7 @@ Na **Programação Orientada a Objetos (POO)**, polimorfismo é a capacidade de 
 
 ---
 
-## 📖 Tipos de Polimorfismo em TypeScript
-
-No momento, vamos focar apenas no **polimorfismo de sobrescrita (override)**, que acontece quando uma **subclasse herda** de uma classe pai e **reescreve um método** com sua própria implementação.
-
----
-
-## 📌 Exemplo 1: Polimorfismo com Animais
+## 📌 Exemplo:
 
 ```typescript
 // Classe base
