@@ -9,7 +9,7 @@ Na **Programação Orientada a Objetos (POO)**, polimorfismo é a capacidade de 
 
 ---
 
-## 📌 Exemplo:
+## 📌 Exemplo 1:
 
 ```typescript
 // Classe base
@@ -52,8 +52,7 @@ Note que o método chamado foi sempre `falar()`, mas cada classe respondeu de um
 
 ---
 
-## 📌 Exemplo 2: Polimorfismo em Funcionários
-
+## 📌 Exemplo 2:
 ```typescript
 // Classe base
 export class Funcionario {
