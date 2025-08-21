@@ -22,13 +22,13 @@ export class Animal {
 // Subclasses sobrescrevendo o método falar
 export class Cachorro extends Animal {
     falar(): void {
-        console.log("O cachorro late: Au au!");
+        console.log("O cachorro late");
     }
 }
 
 export class Gato extends Animal {
     falar(): void {
-        console.log("O gato mia: Miau!");
+        console.log("O gato mia");
     }
 }
 
@@ -43,8 +43,8 @@ animais.forEach(animal => {
 ✅ Saída:
 
 ```
-O cachorro late: Au au!
-O gato mia: Miau!
+O cachorro late
+O gato mia
 O animal faz um som.
 ```
 
