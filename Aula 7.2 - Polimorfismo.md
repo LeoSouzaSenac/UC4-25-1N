@@ -121,11 +121,7 @@ Salário: R$ 5000
    Depois crie as subclasses `Carro` e `Bicicleta`, cada uma sobrescrevendo o método para mostrar uma mensagem diferente.
    Teste criando uma lista de veículos e chamando `mover()` para todos.
 
-2. Crie uma classe `Instrumento` com o método `tocar()`.
-   Depois crie `Violao` e `Bateria`, cada um com sua própria versão do método.
-   Instancie os dois instrumentos e execute `tocar()` em ambos.
-
-3. Crie uma classe `Pagamento` com um método `processar()`.
+2. Crie uma classe `Pagamento` com um método `processar()`.
    Depois crie `CartaoCredito` e `Boleto`, cada um implementando a lógica do pagamento de forma diferente.
    Crie um array de pagamentos e processe todos usando polimorfismo.
 
