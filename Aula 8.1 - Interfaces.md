@@ -7,11 +7,6 @@ descrevendo quais propriedades e tipos ele deve ter.
 
 ---
 
-Ótimo pedido! Adicionar exemplos diretos ao lado das explicações deixa o conteúdo **mais visual e didático**, especialmente para quem está começando.
-
-Aqui está a seção com os **4 propósitos principais das interfaces**, agora com **exemplos claros e simples ao lado de cada explicação**:
-
----
 
 ### 🧩 Para que serve uma Interface?
 
