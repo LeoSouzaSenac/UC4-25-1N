@@ -346,7 +346,7 @@ conta.sacar(200); // funciona como ContaBancaria, mas executa comportamento de C
 
 **Exercício: Clãs de Konoha (Naruto)**
 
-Neste exercício, você vai criar um sistema que representa os clãs de Konoha usando classes abstratas em Java. Cada clã terá suas características e especialidades, mas todos herdarão de uma classe abstrata base chamada `Cla`.
+Neste exercício, você vai criar um sistema que representa os clãs de Konoha usando classes abstratas em Typescript. Cada clã terá suas características e especialidades, mas todos herdarão de uma classe abstrata base chamada `Cla`.
 
 ### Requisitos:
 
