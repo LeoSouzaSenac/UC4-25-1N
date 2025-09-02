@@ -364,7 +364,7 @@ Neste exercício, você vai criar um sistema que representa os clãs de Konoha u
    - `ClaNara`: Implementa o método `habilidadeEspecial()`, que descreve a manipulação de sombras como sua habilidade especial. Seu líder atual é Shikamaru.
    - `ClaAkimichi`: Implementa o método `habilidadeEspecial()`, que descreve a ampliação corporal como sua habilidade especial. Seu líder atual é Chouza.
 
-3. Crie uma classe principal chamada `Konoha` que contenha o método `main`, onde você:
+3. Crie um arquivo principal chamado `Konoha`, onde você:
    - Crie instâncias de cada clã (`ClaUchiha`, `ClaHyuga`, `ClaNara`, `ClaAkimichi`).
    - Chame os métodos `habilidadeEspecial()` e `exibirDetalhes()` para cada clã.
 
