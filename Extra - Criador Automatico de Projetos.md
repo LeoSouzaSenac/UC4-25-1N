@@ -22,6 +22,25 @@ O script:
 6. Atualiza `package.json` com scripts úteis.
 7. Cria a pasta `src` e um arquivo `index.ts` inicial.
 
+* Crie um projeto de nome `projeto-automatico`, e siga todo o passo a passo para criá-lo, como sempre fazemos.
+
+Instale estas dependências nele:
+
+```bash
+# Instala TypeScript como dependência de desenvolvimento
+npm install typescript --save-dev
+
+# Instala tipos do Node.js para o TypeScript
+npm install @types/node --save-dev
+
+# Instala readline-sync para capturar input do usuário
+npm install readline-sync
+
+# (Opcional, mas recomendado) Tipagem do readline-sync
+npm install @types/readline-sync --save-dev
+
+```
+
 ---
 
 ## 2. Bibliotecas
