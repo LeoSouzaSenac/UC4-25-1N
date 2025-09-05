@@ -1,4 +1,4 @@
-# Prova UC4 T
+# Teste de Conhecimentos
 
 ## Questões Objetivas
 
@@ -48,16 +48,7 @@
 </details>
 
 <details>
-<summary>6. A estrutura de dados mais adequada para implementar um sistema de gerenciamento de tarefas em um aplicativo de lista de afazeres, onde as tarefas são adicionadas no final, removidas do início e processadas na ordem em que foram adicionadas, é:</summary>
-
-- A) Pilha.  
-- B) Lista ligada.  
-- C) Fila.  
-- D) Conjunto.  
-</details>
-
-<details>
-<summary>7. Qual é a vantagem de usar getters e setters em classes?</summary>
+<summary>6. Qual é a vantagem de usar getters e setters em classes?</summary>
 
 - A) Eles facilitam a manipulação de dados privados.  
 - B) Eles evitam a criação de objetos.  
@@ -66,7 +57,7 @@
 </details>
 
 <details>
-<summary>8. O que é um construtor em uma classe?</summary>
+<summary>7. O que é um construtor em uma classe?</summary>
 
 - A) Um método usado para criar instâncias da classe.  
 - B) Um método que só pode ser usado internamente.  
@@ -75,16 +66,7 @@
 </details>
 
 <details>
-<summary>9. Como enumeradores são definidos e qual sua finalidade?</summary>
-
-- A) Enumeradores são definidos usando a palavra-chave `enum` e são usados para representar um conjunto de valores nomeados.  
-- B) Enumeradores são usados apenas para criar objetos.  
-- C) Enumeradores são tipos especiais de funções.  
-- D) Enumeradores não existem em TypeScript.  
-</details>
-
-<details>
-<summary>10. Como TypeScript lida com a visibilidade de membros (public, private, protected) em classes?</summary>
+<summary>8. Como TypeScript lida com a visibilidade de membros (public, private, protected) em classes?</summary>
 
 - A) TypeScript ignora completamente as palavras-chave de visibilidade.  
 - B) TypeScript respeita as palavras-chave de visibilidade e impõe restrições de acesso conforme especificado.  
@@ -92,6 +74,14 @@
 - D) A visibilidade é controlada apenas no tempo de execução.  
 </details>
 
+<details>
+<summary>9. Sobre classes abstratas em TypeScript, qual das afirmações é verdadeira?</summary>
+
+- A) Classes abstratas não podem conter métodos implementados.  
+- B) Não é possível herdar de uma classe abstrata.  
+- C) Classes abstratas podem conter métodos implementados e métodos abstratos (sem implementação).  
+- D) Classes abstratas são iguais a interfaces.  
+</details>
 
 ## Questões de Interpretação de Código
 
@@ -234,39 +224,4 @@ console.log(result);
 O que acontecerá neste código? Ocorrerão erros? Se sim, quais?
 
 </details>
-
-<details>
-<summary>5. Enumeradores - Considere o seguinte código:</summary>
-
-```typescript
-enum DayOfWeek {
-    Monday = 1,
-    Tuesday = 2,
-    Wednesday = 3,
-    Thursday = 4,
-    Friday = 5,
-    Saturday = 6,
-    Sunday = 7
-}
-
-function getNextDay(day: DayOfWeek): DayOfWeek {
-    if (day === DayOfWeek.Sunday) {
-        return DayOfWeek.Monday;
-    } else {
-        return day + 1;
-    }
-}
-
-const currentDay: DayOfWeek = DayOfWeek.Wednesday;
-const nextDay: DayOfWeek = getNextDay(currentDay);
-console.log("Next day:", nextDay);
-```
-
-O que será mostrado no console?
-
-</details>
-```
-
----
-
 
