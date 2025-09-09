@@ -275,3 +275,93 @@ console.log("👕 Roupas no estoque:", estoqueRoupas.listar());
 * **Uma única classe** para qualquer tipo de produto.
 * **Segurança de tipos**: não dá pra misturar livros com roupas.
 * Código **mais limpo e reaproveitável**.
+
+---
+
+# 📝 Exercício: Sistema Interativo de Estoque com Generics
+
+## Enunciado
+
+Você vai criar um **sistema de estoque interativo**, que permita **registrar produtos** no estoque através do **console**, usando **`readline-sync`** e **Generics**.
+
+O objetivo é **praticar a criação de classes genéricas**, métodos genéricos e **entrada de dados do usuário**, mantendo o código **flexível e reutilizável**.
+
+---
+
+## Passo a passo
+
+### 1️⃣ Preparar o ambiente
+
+1. Instale o pacote `readline-sync`:
+
+```bash
+npm install readline-sync
+```
+
+2. Importe no seu arquivo principal:
+
+```ts
+import readlineSync from "readline-sync";
+```
+
+---
+
+### 2️⃣ Criar quatro tipos de produto
+
+Crie **quatro classes**:
+
+1. `Livro` → `titulo: string`, `autor: string`, `preco: number`
+2. `Roupa` → `descricao: string`, `tamanho: string`, `preco: number`
+3. `Brinquedo` → `nome: string`, `idadeMinima: number`, `preco: number`
+4. `Eletronico` → `modelo: string`, `marca: string`, `preco: number`
+
+> Use `public` no construtor para criar os atributos automaticamente.
+
+---
+
+### 3️⃣ Criar a classe genérica `Estoque<T>`
+
+A classe deve:
+
+* Armazenar itens em um **array privado** (`T[]`)
+* Ter métodos genéricos para:
+
+  * `adicionar(item: T)`
+  * `listar(): T[]`
+  * `remover(indice: number)`
+  * `buscar(condicao: (item: T) => boolean): T[]`
+
+---
+
+### 4️⃣ Criar o sistema interativo
+
+O sistema deve:
+
+1. Perguntar ao usuário **qual tipo de produto deseja cadastrar**
+2. Pedir os **atributos específicos do produto** (ex: título, autor e preço para livros)
+3. Adicionar o produto ao **estoque correspondente** (`Estoque<Livro>`, `Estoque<Roupa>`, etc.)
+4. Permitir que o usuário **adicione vários produtos**, **liste todos os produtos** e **remova produtos pelo índice**
+5. Continuar em loop até o usuário decidir **sair do sistema**
+
+---
+
+### 5️⃣ Funcionalidades extras
+
+1. Adicionar **busca genérica** dentro do estoque: por preço, tamanho, idade mínima ou marca
+2. Criar **funções genéricas externas** que possam operar em qualquer estoque, por exemplo:
+
+   * Contar itens
+   * Filtrar por preço
+   * Obter o primeiro item
+3. Criar **novo tipo de produto** e testar sem alterar a classe `Estoque<T>`
+
+---
+
+### 6️⃣ Objetivos de aprendizado
+
+* Criar **classes genéricas** (`<T>`)
+* Criar **métodos genéricos dentro da classe**
+* Criar **funções genéricas externas**
+* Trabalhar com **entrada de dados do usuário** usando `readline-sync`
+* Desenvolver **código limpo, reutilizável e seguro**
+
