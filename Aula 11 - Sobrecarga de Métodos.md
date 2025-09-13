@@ -338,8 +338,6 @@ Crie uma classe `Loja` com um método `adicionarProduto` que possa:
 > O método deve imprimir no console o(s) produto(s) que foi/foram adicionados à loja.
 
 
-Perfeito! Vamos deixar o exercício **mais completo e concreto**, incluindo um **estoque inicial de produtos** para que os alunos vejam o método funcionando de verdade.
-
 ---
 
 ### **Exercício 2 – Gerenciador de Estoque**
