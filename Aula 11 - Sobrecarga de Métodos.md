@@ -328,10 +328,6 @@ Com sobrecarga você pode mudar:
 
 ---
 
-Perfeito! Aqui estão **3 exercícios só com o enunciado**, focados em **sobrecarga de métodos** e **facilitando a compreensão para iniciantes em POO e TypeScript**:
-
----
-
 ### **Exercício 1 – Loja de Presentes**
 
 Crie uma classe `Loja` com um método `adicionarProduto` que possa:
