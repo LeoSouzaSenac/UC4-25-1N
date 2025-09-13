@@ -326,4 +326,59 @@ Com sobrecarga você pode mudar:
 ✅ **Tipo de retorno** (dependendo da forma de chamada)
 
 
+---
+
+Perfeito! Aqui estão **3 exercícios só com o enunciado**, focados em **sobrecarga de métodos** e **facilitando a compreensão para iniciantes em POO e TypeScript**:
+
+---
+
+### **Exercício 1 – Loja de Presentes**
+
+Crie uma classe `Loja` com um método `adicionarProduto` que possa:
+
+1. Adicionar **um único produto** (como `string`).
+2. Adicionar **uma lista de produtos** (array de `string`).
+
+> O método deve imprimir no console o(s) produto(s) que foi/foram adicionados à loja.
+
+
+Perfeito! Vamos deixar o exercício **mais completo e concreto**, incluindo um **estoque inicial de produtos** para que os alunos vejam o método funcionando de verdade.
+
+---
+
+### **Exercício 2 – Gerenciador de Estoque**
+
+Crie uma classe `Estoque` que gerencie uma lista de produtos (strings).
+
+1. O estoque deve começar com alguns produtos já cadastrados, por exemplo:
+
+   ```ts
+   ["Arroz", "Feijão", "Macarrão", "Óleo", "Açúcar"]
+   ```
+
+2. Crie um método `remover` que possa:
+
+   * Remover **um produto** passando o **nome** (`string`).
+   * Remover **vários produtos** passando uma **lista de nomes** (`string[]`).
+
+3. O método deve mostrar no console:
+
+   * Quais produtos foram removidos.
+   * Quais produtos não foram encontrados no estoque (opcional, mas recomendado).
+
+> Exemplo de uso esperado:
+
+```ts
+const estoque = new Estoque();
+
+estoque.remover("Arroz");
+// Saída: Produto removido: Arroz
+
+estoque.remover(["Feijão", "Açúcar", "Chocolate"]);
+// Saída: Produtos removidos: Feijão, Açúcar
+//       Produtos não encontrados: Chocolate
+```
+
+---
+
 
