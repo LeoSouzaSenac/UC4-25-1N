@@ -17,13 +17,13 @@
 </details>
 
 <details>
-<summary>3. TypeScript roda diretamente no navegador?</summary>
+<summary>3. TypeScript roda diretamente?</summary>
 <p>Não. Ele precisa ser transpilado para JavaScript antes.</p>
 </details>
 
 <details>
-<summary>4. Como se instala o TypeScript globalmente?</summary>
-<p><code>npm install -g typescript</code></p>
+<summary>4. Como se instala o TypeScript?</summary>
+<p><code>npm install typescript</code></p>
 </details>
 
 <details>
@@ -36,8 +36,8 @@
 ## 💻 2. Comandos de Terminal (TypeScript)
 
 <details>
-<summary>1. Como iniciar um projeto TypeScript?</summary>
-<p><code>tsc --init</code></p>
+<summary>1. Qual o comando para criar o package.json?</summary>
+<p><code>npm init -y</code></p>
 </details>
 
 <details>
@@ -46,18 +46,18 @@
 </details>
 
 <details>
-<summary>3. Como assistir mudanças nos arquivos?</summary>
-<p><code>tsc -w</code></p>
+<summary>3. O que é transpilar?</summary>
+<p><code>É transformar os arquivos typescript em javascript.</code></p>
 </details>
 
 <details>
-<summary>4. Como compilar um arquivo específico?</summary>
+<summary>4. Como transpilar um arquivo específico?</summary>
 <p><code>tsc nome-do-arquivo.ts</code></p>
 </details>
 
 <details>
-<summary>5. Como compilar com um arquivo tsconfig.json personalizado?</summary>
-<p><code>tsc -p caminho/para/tsconfig.json</code></p>
+<summary>5. Como criar o tsconfig.json?</summary>
+<p><code>npx tsc --init</code></p>
 </details>
 
 ---
@@ -85,8 +85,8 @@
 </details>
 
 <details>
-<summary>5. Como declarar uma tupla com uma string e um número?</summary>
-<p><code>let pessoa: [string, number] = ["João", 30];</code></p>
+<summary>5. Como declarar um array?</summary>
+<p><code>let pessoa: string[] = ["João"];</code></p>
 </details>
 
 ---
@@ -168,7 +168,7 @@
 
 <details>
 <summary>4. É possível ter métodos com mesmo nome mas comportamento diferente?</summary>
-<p>Sim, usando sobreposição ou sobrecarga.</p>
+<p>Sim, usando sobrecarga.</p>
 </details>
 
 <details>
